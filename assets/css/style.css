@@ -30,17 +30,20 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    z-index: 999;
 }
 
 header:after{
     content:'';
-    background-color: rgb(77, 74, 74);
+    background-color: rgb(61, 59, 59);
     width:100%;
     height: 82.88px;
     position:absolute;
     top:0;
     left:0;
     opacity:0.5;
+
 }
 
 .header-box {
@@ -48,14 +51,15 @@ header:after{
     display: inline-block;
     width: 960px;
     padding: 0;
-    z-index: 1;
+    z-index: 999;
 }
 
 .title {
-    background-color: rgb(109, 1, 1);
+    background-color: rgb(54, 54, 54);
     float: left;
     padding: 10px;
     box-sizing: border-box;
+    border-radius: 25px;
 }
 
 ul {
@@ -81,30 +85,69 @@ li{
 }
 
 .main-content {
-    position: static;
     height: 100%;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    z-index: 1;   
     
 }
 
-/* .maincontent:after{
+.main-content:after{
     content:'';
     background-color: rgb(77, 74, 74);
     width:960px;
-    height:940px;
+    height:400px;
     position:absolute;
     opacity:0.2;
-} */
+    overflow: auto;
+    border-radius: 25px;
+    z-index: -2;
+
+}
+
+.port-content {
+    height: 100%;
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    z-index: 1;
+    
+    
+}
+
+.port-content:after{
+    content:'';
+    background-color: rgb(77, 74, 74);
+    width:960px;
+    height:815.23px;
+    position:absolute;
+    opacity:0.2;
+    overflow: auto;
+    border-radius: 25px;
+    z-index: -2;
+}
+
 
 .content-box {
-    background-color: white;
-    margin: auto;
+    /* background-color: white; */
+    color: white;
+    margin: 100px auto;
     max-width: 960px;
     padding: 10px;
     box-sizing: border-box;
+    z-index: 1;    
 }
 
+form {
+    width: 940px;
+}
 
 
 li:not(:first-child) {
@@ -112,19 +155,49 @@ li:not(:first-child) {
     
 }
 
+.color-box {
+    background-color: grey;
+    width: 100%;
+    height: 10px;
+    bottom: 51px;
+    position: absolute;
+}
+
 footer {
-    background-color: white;
-    position: fixed;
+    /* position: fixed; */
     left: 0;
     bottom: 0;
     width: 100%;
-    text-align: center;
+    text-align: center;    
+}
+
+
+footer:after{
+    content:'';
+    background-color: rgb(77, 74, 74);
+    width:100%;
+    height: 51px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    opacity:0.5;
+}
+
+.footer-box {
+    color: white;
+    z-index: 1;
+    display: inline-block;
+    bottom: 0;
+    position: absolute;
 }
 
 .column {
     float: left;
     width: 33.33%;
     padding: 5px;
+    position: relative;
+    z-index: 999;
+
 }
 
 .row::after {
@@ -138,6 +211,39 @@ a {
 }
 
 a:link {
-
     text-decoration: none;
+}
+
+.column>a:hover {    
+    box-shadow:0px -100px 200px 0px rgba(0, 255, 0, 0.67);
+}
+
+.project-1 {
+    position: absolute;
+    top: 165px;
+    left: 110px;
+}
+
+.project-2 {
+    position: absolute;
+    top: 165px;
+    left: 110px;
+}
+
+.project-3 {
+    position: absolute;
+    top: 165px;
+    left: 110px;
+}
+
+.project-4 {
+    position: absolute;
+    top: 165px;
+    left: 110px;
+}
+
+.project-5 {
+    position: absolute;
+    top: 165px;
+    left: 110px;
 }
