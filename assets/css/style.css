@@ -197,6 +197,7 @@ footer:after{
     padding: 5px;
     position: relative;
     z-index: 999;
+    margin: auto;
 
 }
 
@@ -215,35 +216,20 @@ a:link {
 }
 
 .column>a:hover {    
-    box-shadow:0px -100px 200px 0px rgba(0, 255, 0, 0.67);
+    box-shadow: 0px -85px 500px 25px rgba(255, 255, 255, 0.67);
 }
 
-.project-1 {
-    position: absolute;
-    top: 165px;
-    left: 110px;
-}
-
-.project-2 {
-    position: absolute;
-    top: 165px;
-    left: 110px;
-}
-
-.project-3 {
-    position: absolute;
-    top: 165px;
-    left: 110px;
-}
-
-.project-4 {
-    position: absolute;
-    top: 165px;
-    left: 110px;
-}
-
+.project-1,
+.project-2,
+.project-3,
+.project-4,
 .project-5 {
     position: absolute;
     top: 165px;
-    left: 110px;
+    background-color: rgb(54, 54, 54);
+    width: 275px;
+    text-align: center;
+    z-index: 998;
+    height: 25px;
+    padding-top: 5px;
 }
