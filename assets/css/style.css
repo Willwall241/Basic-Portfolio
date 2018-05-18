@@ -43,7 +43,6 @@ header:after{
     top:0;
     left:0;
     opacity:0.5;
-
 }
 
 .header-box {
@@ -68,7 +67,6 @@ ul {
 
 li:not(:first-child) {
     padding-right: 20px;
-
 }
 
 li{
@@ -77,6 +75,10 @@ li{
     padding-left: 20px;
 }
 
+a.nav:hover {
+    box-shadow: 0px 0px 80px -1px rgba(255, 255, 255, 0.67);
+
+}
 
 
 #myPic {
@@ -92,15 +94,14 @@ li{
     justify-content: center;
     align-items: center;
     overflow: auto;
-    z-index: 1;   
-    
+    z-index: 1;    
 }
 
 .main-content:after{
     content:'';
     background-color: rgb(77, 74, 74);
     width:960px;
-    height:400px;
+    height:425px;
     position:absolute;
     opacity:0.2;
     overflow: auto;
@@ -118,8 +119,6 @@ li{
     align-items: center;
     overflow: auto;
     z-index: 1;
-    
-    
 }
 
 .port-content:after{
@@ -136,7 +135,6 @@ li{
 
 
 .content-box {
-    /* background-color: white; */
     color: white;
     margin: 100px auto;
     max-width: 960px;
@@ -146,13 +144,12 @@ li{
 }
 
 form {
-    width: 940px;
+    width: 960px;
 }
 
 
 li:not(:first-child) {
-    border-right:solid 1px black;
-    
+    border-right:solid 1px black;    
 }
 
 .color-box {
@@ -164,7 +161,6 @@ li:not(:first-child) {
 }
 
 footer {
-    /* position: fixed; */
     left: 0;
     bottom: 0;
     width: 100%;
@@ -185,20 +181,24 @@ footer:after{
 
 .footer-box {
     color: white;
+    bottom: 0px;
     z-index: 1;
     display: inline-block;
-    bottom: 0;
     position: absolute;
+}
+
+.footer-box > p {
+    padding: 0;
 }
 
 .column {
     float: left;
-    width: 33.33%;
+    width: 33%;
+    left: 20%;
     padding: 5px;
     position: relative;
     z-index: 999;
     margin: auto;
-
 }
 
 .row::after {
